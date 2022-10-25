@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* fonts */
+    --heading-font: 'Big Shoulders Display', cursive;
+    --paragraph-font: 'Lexend Deca', sans-serif; 
+
+    /* colors */
+    --sedans-clr:hsl(31, 77%, 52%);
+    --suvs-clr: hsl(184, 100%, 22%);
+    --luxury-clr: hsl(179, 100%, 13%);
+    --par-clr: hsla(0, 0%, 100%, 0.75);
+    --bg-btn-head: hsl(0, 0%, 95%);
+}
+body{
+    background-color: var(--par-clr);
+    font-family: var(--paragraph-font);
+    font-size: 12px;
+    color: var(--par-clr);
+    min-width: 60%;
+}
+img{
+    width: 40px;
+    margin-top: 20px;
+}
+h3{
+    font-family: var(--heading-font);
+    font-size: 2em;
+    color: var(--bg-btn-head);
+}
+.flex-container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+    
+
+}
+.flex-item{
+    padding: 3em;
+    height: 60%;
+    
+    
+}
+.flex-item p{
+    margin-top: 50px;
+}
+.item-1{
+    background-color: var(--sedans-clr);
+    
+    border-radius: 10px 0 0 10px ;
+    
+}
+
+.item-2 {
+    background-color: var(--suvs-clr);
+
+}
+
+.item-3 {
+    background-color: var(--luxury-clr);
+    border-radius: 0 10px 10px 0;
+}
+button{
+    
+    
+    margin-top: 50px ;
+    margin-top: 20px;
+    width: 10em;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    color: var(--suvs-clr);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    background-color: var(--bg-btn-head);
+}
+button:hover {
+    border: 2px solid var(--bg-btn-head);
+    color: var(--bg-btn-head);
+    background-color: transparent;
+}
+@media screen and (max-width:1440px) {
+    .flex-item {
+       flex-direction: row;
+       
+
+    }
+}
+@media screen and (max-width:705px) {
+    .flex-container {
+        flex-direction: column;
+        margin-top: 200px;
+        height: 100vh;
+        width: 100%;
+
+
+
+    }
+
+    .item-1,
+    .item-3 {
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width:375px) {
+    .flex-container {
+        flex-direction: column;
+        margin-top: 200px;
+        height: 100vh;
+        width: 100%;
+       
+        
+
+    }
+    .item-1, .item-3{
+    border-radius: 0px;
+    }
+}
