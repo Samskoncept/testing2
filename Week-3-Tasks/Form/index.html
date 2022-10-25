@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/font-awesome/css/all.css">
+    
+
+    <title>Registration page</title>
+</head>
+
+<body>
+
+    <main>
+        <h2>Registration Form
+        
+        </h2>
+        <i class="fa-solid fa-address-card"></i>
+        
+        <form action="login.html">
+            <table>
+                <tr>
+                    <td>
+                        First Name
+                    </td>
+                    <td>
+                        <input type="fname" name="fname" placeholder="Firs tName" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name
+                    </td>
+                    <td>
+                        <input type="lname" name="lname" placeholder="Last Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone Number
+                    </td>
+                    <td>
+                        <input type="number" name="tel" id="" placeholder="Phone Number" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="" placeholder="Your Email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <input type="radio" required name="gender" id=""> Male <input type="radio" name="gender" id="">
+                        Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth
+                    </td>
+                    <td>
+                        <input type="date" name="dob" id="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Favourite Color
+                    </td>
+                    <td>
+                        <input type="color" name="color" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password
+                    </td>
+                    <td>
+                        <input type="password" name="Password" id="" placeholder="Password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                        
+                            <button class="button" type="submit">Register</button>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p>Already have an account? <a href="login.html">Login</a> </p>
+        </form>
+    </main>
+</body>
+
+</html>
